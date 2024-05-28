@@ -1,0 +1,275 @@
+/* Global styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(Printed-Textbooks-vs.-E-Books-Students-Learn-More-with-Print-Header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li:hover  .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons .button,
+.header-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #8c0303;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-buttons .button:hover,
+.header-buttons button:hover {
+    background-color: #a10e0e;
+}
+.logo {
+    height: 100px;
+    margin-top: -10px;
+    opacity: 0.6;
+}
+
+
+
+/* Slideshow styles */
+/* Slideshow styles */
+/* Slideshow styles */
+.image {
+    width: 600px; /* Adjust this value as needed */
+    height: 400px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the slideshow horizontally */
+    overflow: hidden; /* Hide overflow if images are larger than the container */
+    position: relative; /* Position relative for absolute positioning of images */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%; /* Make images fill the container width */
+    height: 100%; /* Make images fill the container height */
+    object-fit: cover; /* Cover the entire container with the image, maintaining aspect ratio */
+    position: absolute; /* Position images absolutely within the container */
+    top: 0; /* Position images at the top of the container */
+    left: 0; /* Position images at the left of the container */
+}
+
+
+/* Container styles */
+.container {
+    width: 1200px;
+    height: 400px;
+    padding: 20px;
+    margin-left: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Changed to column layout */
+    align-items: center;
+}
+
+.c10 {
+    width: 600px;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0 0 9px rgb(74, 7, 7);
+    opacity: 0.9;
+    background-color: rgba(191, 235, 244, 0.945);
+}
+
+.c10:hover {
+    background-color: #d8f7ffe4;
+}
+
+.cont {
+    background-color: rgba(255, 255, 255, 0.871);
+    height: 2000px;
+    margin-top: -10px;
+}
+
+/* Social icons styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.additional-info {
+    width: 30%;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: #fff;
+}
+.social-icons a:hover{
+    color: #760000;
+}
+
+footer ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .additional-info,
+    .social-icons {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+footer .copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16.5px;
+    line-height: 1.7;
+}
+
+p span.highlight {
+    color: #8c0303;
+    font-weight: bold;
+    line-height: 2;
+}
+h1{
+    color: white;
+    text-shadow: 0 0 9px rgb(64, 3, 3);;
+    font-size: 40px;
+}
+
+h2 {
+    color: #8c0303;
+}
+h4{
+    color: #760000;
+    text-align: center;
+    font-size: 18px;
+}
+
+p1 {
+    font-size: 17px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: upper-roman;
+    font-size: 16px;
+    color: #760000;
+}
+ol{
+    list-style-type: none;
+}
+li {
+    padding-bottom: 10px;
+    list-style-position: inherit;
+}
+/* Login Page Styles */
