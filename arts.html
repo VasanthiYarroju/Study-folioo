@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Arts (B.A.) Courses and Entrance Exams</title>
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="sstyles/arts.css">
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: #8c0303;
+}
+
+/* Header Styles */
+header {
+    background-image: url(btech.jpg);
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 110px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.6;
+    
+}
+.buttons nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 20px;
+
+}
+
+.buttons nav ul li {
+    position: relative;
+    padding-left:20px;
+    padding-top: -400px;
+    margin-top: -50px;
+    
+}
+
+.buttons nav ul li a {
+    text-decoration: none;
+    color: #e9f2f5;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 8px 16px rgb(88, 4, 4);
+}
+
+.buttons nav ul li a:hover {
+    color: #c2b200;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+   
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+}
+/*toc*/
+
+.toc {
+    position: absolute;
+   
+    
+    top: 0px;
+    right: 10px;
+}
+.toc nav h3{
+    padding-right: 30px;
+}
+
+.toc nav ul {
+    list-style-type:square;
+    padding: 0;
+    padding-right: 20px;
+    display: block;
+}
+
+.toc nav ul li {
+    position: relative;
+}
+
+.toc nav ul li a {
+    text-decoration: none;
+    color: #e9f2f5;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.toc nav ul li a:hover {
+    color: #c2b200;
+}
+/*Table content*/
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: -300px;
+}
+
+thead {
+    background-color: #8e1515;
+    color: white;
+    margin-left: -30px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin-left: 0px;
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Specializations Grid */
+.specialization-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    gap:60px
+}
+
+/*image*/
+
+img{
+    width: 450px;
+    height: 300px;
+    margin-right: -500px;
+    
+   
+}
+/* Entrance Exams List */
+.exam-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exam-list li {
+    margin-bottom: 10px;
+}
+
+.exam-list a {
+    font-weight: bold;
+}
+
+/* Top Colleges Grid */
+.college-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.college-card {
+    background-color: #eef5fe;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.college-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.college-grid :hover{
+        background-color: rgb(232, 244, 255);
+        box-shadow:0 0 9px rgb(189, 188, 188) ;
+}
+
+.college-card h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.college-card .learn-more {
+    display: inline-block;
+    background-color: #8c0303;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Career Opportunities List */
+.career-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.career-list li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    
+}
+.career-list li:hover{
+    box-shadow:0 0 9px rgb(216, 216, 216);
+    background-color: #f6f6f6;
+}
+/*iit's*/
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap:60px
+}
+/* Social icons styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    background-image: url(btech.jpg);
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.additional-info {
+    width: 30%;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    color: #760000;
+}
+
+footer ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .additional-info,
+    .social-icons {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+footer .copyright {
+    text-align: center;
+
+    width: 100%;
+    margin-top: 0;
+    font-size: 18px;
+}
+</style><body>
+    <header>
+        <div class="header-content">
+            <img src="2.png" alt="Studyfolio Logo" class="logo">
+            <h1>Bachelor of Arts (B.A.)</h1>
+            <p>Discover the diverse world of arts and humanities</p>
+        </div>
+        <div class="buttons">
+            <nav>
+                <ul>
+                    <li><a href="Studyfolio.html">Home</a></li>
+                    <li><a href="After_inter.html">Previous</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="toc">
+            <nav>
+                <h3><u>Table of Contents</u></h3>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#spec">Specializations</a></li>
+                    <li><a href="#entrance">Entrance Exams</a></li>
+                    <li><a href="#colleges">Top Colleges</a></li>
+                    <li><a href="#career">Career Opportunities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" id="intro">
+            <h2>Introduction to B.A.</h2>
+            <p>The Bachelor of Arts (B.A.) is a 3-year undergraduate degree program that offers a broad education in the arts, humanities, and social sciences. This program is designed to develop critical thinking, communication, and analytical skills, preparing students for a wide range of careers.</p>
+            <p>By pursuing a B.A. degree, you'll explore various disciplines, engage with diverse perspectives, and gain a well-rounded education that opens doors to numerous opportunities in both the public and private sectors.</p>
+        </section>
+
+        <section class="specializations" id="spec">
+            <h2>Popular B.A. Specializations</h2>
+            <div class="specialization-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field of Study</th>
+                            <th>Specializations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Languages and Literature</td>
+                            <td>English, Hindi, French, Spanish, German, Comparative Literature</td>
+                        </tr>
+                        <tr>
+                            <td>Social Sciences</td>
+                            <td>Psychology, Sociology, Anthropology, Political Science, International Relations</td>
+                        </tr>
+                        <tr>
+                            <td>Humanities</td>
+                            <td>History, Philosophy, Religious Studies, Cultural Studies</td>
+                        </tr>
+                        <tr>
+                            <td>Fine Arts</td>
+                            <td>Visual Arts, Performing Arts, Music, Theatre, Dance</td>
+                        </tr>
+                        <tr>
+                            <td>Media and Communication</td>
+                            <td>Journalism, Mass Communication, Media Studies, Public Relations</td>
+                        </tr>
+                        <tr>
+                            <td>Economics and Business</td>
+                            <td>Economics, Business Administration, Public Administration</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="ba.webp" alt="Specializations">
+            </div>
+        </section>
+
+        <section class="entrance-exams" id="entrance">
+            <h2>Entrance Exams for B.A.</h2>
+            <p>Admission to B.A. programs in various colleges and universities may require clearing entrance exams. Some of the popular entrance exams include:</p>
+            <ul class="exam-list">
+                <li><a href="#">DUET (Delhi University Entrance Test)</a></li>
+                <li><a href="#">JNU Entrance Exam (Jawaharlal Nehru University)</a></li>
+                <li><a href="#">IPU CET (Indraprastha University Common Entrance Test)</a></li>
+                <li><a href="#">Jamia Millia Islamia Entrance Exam</a></li>
+                <li><a href="#">BHU UET (Banaras Hindu University Undergraduate Entrance Test)</a></li>
+            </ul>
+            <p>Each exam has its own pattern, eligibility criteria, and preparation strategies. Make sure to check the specific requirements for the colleges you are interested in.</p>
+        </section>
+
+        <section class="top-colleges" id="colleges">
+            <h2>Top B.A. Colleges in India</h2>
+            <p>Here are some of the top institutions offering B.A. programs in India:</p>
+            <div class="college-grid">
+                <div class="college-card">
+                    <img src="du.jpg" alt="Delhi University">
+                    <h3>University of Delhi</h3>
+                    <p>Known for its diverse programs and distinguished faculty, Delhi University offers a wide range of B.A. specializations.</p>
+                    <a href="#du" class="learn-more">Explore DU</a>
+                </div>
+                <div class="college-card">
+                   
+                    <h3>Jawaharlal Nehru University (JNU)</h3>
+                    <p>JNU is renowned for its focus on social sciences and humanities, offering various specialized B.A. programs.</p>
+                    <a href="#jnu" class="learn-more">Explore JNU</a>
+                </div>
+                <div class="college-card">
+                    
+                    <h3>Jamia Millia Islamia</h3>
+                    <p>Located in New Delhi, Jamia offers a rich blend of traditional and contemporary courses in the arts and humanities.</p>
+                    <a href="#jmi" class="learn-more">Explore JMI</a>
+                </div>
+                <div class="college-card">
+                    
+                    <h3>Banaras Hindu University (BHU)</h3>
+                    <p>BHU is one of the oldest and most prestigious universities in India, offering a variety of B.A. programs.</p>
+                    <a href="#bhu" class="learn-more">Explore BHU</a>
+                </div>
+                <div class="college-card">
+                    
+                    <h3>University of Mumbai</h3>
+                    <p>With a strong emphasis on liberal arts education, Mumbai University offers numerous B.A. specializations.</p>
+                    <a href="#mu" class="learn-more">Explore MU</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="career-opportunities" id="career">
+            <h2>Career Opportunities After B.A.</h2>
+            <p>A B.A. degree opens up a wide array of career opportunities in various fields. Some of the prominent career paths include:</p>
+            <ul class="career-list">
+                <li>Writer/Editor</li>
+                <li>Journalist</li>
+                <li>Public Relations Specialist</li>
+                <li>Social Worker</li>
+                <li>Teacher/Professor</li>
+                <li>Researcher</li>
+                <li>Marketing and Advertising Professional</li>
+                <li>Human Resources Specialist</li>
+                <li>Political Analyst</li>
+                <li>Economist</li>
+            </ul>
+            <h3>Media and Communication:</h3>
+            <ul class="career-list">
+                <li>Journalist</li>
+                <li>Media Planner</li>
+                <li>Public Relations Officer</li>
+                <li>Content Creator</li>
+            </ul>
+            <h3>Education and Research:</h3>
+            <ul class="career-list">
+                <li>Teacher</li>
+                <li>Professor</li>
+                <li>Academic Researcher</li>
+                <li>Education Consultant</li>
+            </ul>
+            <h3>Public Sector and Administration:</h3>
+            <ul class="career-list">
+                <li>Civil Services</li>
+                <li>Public Administrator</li>
+                <li>Policy Analyst</li>
+            </ul>
+            <h3>Creative Arts and Design:</h3>
+            <ul class="career-list">
+                <li>Graphic Designer</li>
+                <li>Artist</li>
+                <li>Photographer</li>
+            </ul>
+        </section>
+
+        <section id="du">
+            <h1>University of Delhi (DU) - Average Annual Fees and Courses</h1>
+            <h3>Here , are the top colleges near by Delhi</h3>
+            <div class="specialization-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>College</th>
+                            <th>Location</th>
+                            <th>Average Annual Fees (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>St. Stephen's College</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>40,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Lady Shri Ram College for Women</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>35,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hindu College</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>42,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Miranda House</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>37,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ramjas College</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>38,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="delhi.jpg" alt="DU">
+            </div>
+        </section>
+        <section id="jnu">
+            <h1>Jawaharlal Nehru University (JNU) - Average Annual Fees and Courses</h1>
+            <h3>Here, are the Specializations provided in the JNU</h3>
+            <div class="specialization-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>School</th>
+                            <th>Location</th>
+                            <th>Average Annual Fees (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>School of Language, Literature and Culture Studies</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>35,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>School of Social Sciences</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>40,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>School of International Studies</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>45,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>School of Arts and Aesthetics</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>37,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>School of Environmental Sciences</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>39,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="jnu.jpg" alt="JNU">
+            </div>
+        </section>
+        <section id="jmi">
+            <h1>Jamia Millia Islamia (JMI) - Average Annual Fees and Courses</h1>
+            <h3>Here, are the Specializations provided in the JMI</h3>
+            <div class="specialization-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Faculty</th>
+                            <th>Location</th>
+                            <th>Average Annual Fees (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Faculty of Humanities and Languages</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>30,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Faculty of Social Sciences</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>32,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Faculty of Fine Arts</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>34,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Faculty of Education</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>33,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Faculty of Law</td>
+                            <td>New Delhi, Delhi</td>
+                            <td>35,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="JMU.jpg" alt="JMI">
+            </div>
+        </section>
+        <section id="bhu">
+            <h1>Banaras Hindu University (BHU) - Average Annual Fees and Courses</h1>
+            <h3>Here, are the Specializations provided in the BHU</h3>
+            <div class="specialization-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Faculty</th>
+                            <th>Location</th>
+                            <th>Average Annual Fees (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Faculty of Arts</td>
+                            <td>Varanasi, Uttar Pradesh</td>
+                            <td>25,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Faculty of Social Sciences</td>
+                            <td>Varanasi, Uttar Pradesh</td>
+                            <td>28,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Faculty of Performing Arts</td>
+                            <td>Varanasi, Uttar Pradesh</td>
+                            <td>27,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Faculty of Visual Arts</td>
+                            <td>Varanasi, Uttar Pradesh</td>
+                            <td>29,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Faculty of Education</td>
+                            <td>Varanasi, Uttar Pradesh</td>
+                            <td>26,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="bhu.webp" alt="BHU">
+            </div>
+        </section>
+        <section id="mu">
+            <h1>University of Mumbai (MU) - Average Annual Fees and Courses</h1>
+            <h3>Here, are the top colleges provided near by the MU</h3>
+            <div class="specialization-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>College</th>
+                            <th>Location</th>
+                            <th>Average Annual Fees (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>St. Xavier's College</td>
+                            <td>Mumbai, Maharashtra</td>
+                            <td>50,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jai Hind College</td>
+                            <td>Mumbai, Maharashtra</td>
+                            <td>45,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sophia College for Women</td>
+                            <td>Mumbai, Maharashtra</td>
+                            <td>47,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Wilson College</td>
+                            <td>Mumbai, Maharashtra</td>
+                            <td>43,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Elphinstone College</td>
+                            <td>Mumbai, Maharashtra</td>
+                            <td>40,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="mumbai.jpg" alt="MU">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <ol>
+                    <li>Email: info@studyfolio.com</li>
+                    <li>Phone: +1 (123) 456-7890</li>
+                    <li>Address: 123 Main Street, Andhra Pradesh, India</li>
+                </ol>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/p/ygV8hxFyQrNTKsNk/?mibextid=xfxF2i"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/programmatixinstitute/p/C4uSCJpoR-J/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="additional-info">
+                <h3>Additional Information</h3>
+                <ol>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ol>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Studyfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
