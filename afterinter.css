@@ -1,0 +1,258 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+   background-color: #f0f0f0;
+    
+   
+   
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 110px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.6;
+    
+}
+
+.learnmore {
+    position: absolute;
+    bottom: 10px; /* Changed from 0 to provide some padding */
+    right: 20px; /* Changed to 10px for a consistent margin */
+    background-color: #ff9900; /* Change to desired color */
+    color: white; /* Change text color */
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-decoration: none; /* Remove underline */
+}
+ .learnmore a{
+    color: white;
+    text-decoration: none;
+ } 
+ .learnmore :hover{
+        color: #f46363;
+ }
+ 
+.part{
+    background-color: #f0f0f0;
+    padding-top: 0px;
+    margin-top: -20px;
+    color: black;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Changed to column layout */
+    align-items: center;
+    padding: 20px;
+    width: 1000px; /* Added 'px' unit */
+   margin: auto;
+    justify-content: space-between;
+    box-shadow: 100px;
+
+    
+    
+}
+.course {
+    background-image: url(p.jpeg);
+    
+    width: 1100px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #b5aeae00;
+    border-radius: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Changed to column layout */
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 100%;
+}
+.course img {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    border-radius: 0px;
+    margin-bottom: 15px;
+
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.945);
+}
+.course-text {
+    margin-left: 25px; /* Added margin-top to create vertical space */
+    border-left: 1px solid #ddd; /* Corrected border color */
+    padding-left:7px; /* Added padding to separate text from the line */
+    background-color: #fff;
+    width:750px;
+    height: 290px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 0px;
+
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 25px;
+    margin-top: 40px;
+    text-shadow: 0 0 9px rgb(64, 3, 3);
+   
+}
+ul{
+    text-align:left;
+    list-style-type: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+li{
+    padding-bottom: 10px;
+    text-align: justify;
+    
+    
+    font-size: 19px;
+}
+h3{
+    text-align: justify;
+    font-size: 20px;
+    color: #8c0303;
+}
+header{
+    background-color: #333;
+    height: 110px;
+    background-image: url(btech.jpg);
+    margin-top: -40px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav ul li {
+    position: relative;
+    padding-left: 200px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+    margin-top: -70px;
+}
+
+nav ul li a:hover {
+    color: #f5f8eb;
+}
+p{
+    padding-top: 10px;
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: center;
+    color: black;
+}
+p span.highlight{
+    color: #8c0303;
+    font-weight: bold;
+}
+u{
+    color: #8c0303;
+    font-size: 19px;
+    font-weight: bold;
+}
+/* Social icons styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    background-image: url(btech.jpg);
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.additional-info {
+    width: 30%;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    color: #760000;
+}
+
+footer ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .additional-info,
+    .social-icons {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+footer .copyright {
+    text-align: center;
+
+    width: 100%;
+    margin-top: 0;
+    font-size: 18px;
+}
