@@ -1,0 +1,323 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    background-attachment: fixed;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    background-image: url(btech.jpg);
+    padding: 60px 0 ;
+    margin-top: -20px;
+    margin-left: -10px;
+    color: #fff;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 110px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.3;
+    
+}
+.buttons nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 20px;
+
+}
+
+.buttons nav ul li {
+    position: relative;
+    padding-left:20px;
+    padding-top: -400px;
+    margin-top: -50px;
+    
+}
+
+.buttons nav ul li a {
+    text-decoration: none;
+    color: #e9f2f5;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 8px 16px rgb(88, 4, 4);
+}
+
+.buttons nav ul li a:hover {
+    color: #c2b200;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+   
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+}
+/*toc*/
+
+.toc {
+    position: absolute;
+   
+    
+    top: 0px;
+    right: 10px;
+}
+.toc nav h3{
+    padding-right: 30px;
+}
+
+.toc nav ul {
+    list-style-type:square;
+    padding: 0;
+    padding-right: 20px;
+    display: block;
+}
+
+.toc nav ul li {
+    position: relative;
+}
+
+.toc nav ul li a {
+    text-decoration: none;
+    color: #e9f2f5;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.toc nav ul li a:hover {
+    color: #c2b200;
+}
+.container {
+    max-width:max-content;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+    margin-left:auto;
+    align-content: flex-start;
+}
+p{
+    font-size:18px;
+}
+p span.highlight{
+    color: #8c0303;
+    font-weight: bold;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    gap:40px;
+    
+}
+.cont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    gap:30px;
+    
+}
+.cont1 table{
+    margin-left: -100px;
+}
+.cont1 img{
+    width: 400px;
+    height: 450px;
+    margin-left: 100px;
+    margin-right: -100px;
+    margin-top: -40px;
+
+
+}
+img{
+    width: 500px;
+    height: 450px;
+    margin-left: 100px;
+    margin-right: -300px;
+    margin-top: -40px;
+
+    
+}
+table {
+    width: 900px;
+    border-collapse: collapse;
+    font-size: 18px;
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    opacity: 1;
+}
+
+th, td:hover{
+    background-color: #ededed;
+}
+th, td {
+    border: 1px solid rgb(226, 226, 226);
+    padding: 8px;
+    text-align: left;
+
+}
+ol{
+    font-size: 18px;
+}
+ol li{
+    line-height: 1.7;
+}
+th {
+    background-color: #c0bfbf;
+}
+td{
+    background-color: #f8f8f8e8;
+}
+h1{
+    color: #8c0303;
+    margin-left: 10px;
+    font-size: 40px;
+}
+h2{
+    color: #8c0303;
+}
+ul{
+    font-size: 18px;
+    
+}
+ul li{
+    line-height: 1.7;
+}
+td .highlight:hover {
+    text-decoration: underline;
+    text-decoration-color: #8c0303;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Social icons styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    background-image: url(btech.jpg);
+    margin-left: -10px;
+    padding-bottom: -10px;
+    margin-bottom: -10px;
+    margin-right: -9px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info,
+.additional-info {
+    width: 30%;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.social-icons a:hover {
+    color: #760000;
+}
+
+footer ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .additional-info,
+    .social-icons {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+footer .copyright {
+    text-align: center;
+
+    width: 100%;
+    margin-top: 0;
+    font-size: 18px;
+}
+p{
+    line-height: 1.7;
+}
+/*resourse*/
+.resources{
+    background-color: #ededed;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+
+}
+.resources h2{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.resources:hover{
+    background-color: #d8d8d8;
+    box-shadow: 0 1px  9px rgb(205, 205, 205);
+}
