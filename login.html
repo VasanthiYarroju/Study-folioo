@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Studyfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    body{
+        background-image: url(Printed-Textbooks-vs.-E-Books-Students-Learn-More-with-Print-Header.jpg);   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+              
+    }
+    
+    .login-container {
+    max-width: 450px;
+    height: 400px;
+    background-color: #ddd;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-right: 10px;
+
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8c0303;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #931414;
+}
+.header-container{
+        text-align: center;
+        background-color: #ddd;
+        height: 100px;
+        align-items: center;
+}
+h2{
+    margin-top: 10px;
+    padding-top: 1%;
+    color: #8c0303;
+    font-size: 2.5em;
+}
+</style>
+<body>
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="Studyfolio.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
