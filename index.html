@@ -12,7 +12,7 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin: 0;
             padding: 0;
-            background-image: url(Printed-Textbooks-vs.-E-Books-Students-Learn-More-with-Print-Header.jpg);
+            
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -26,7 +26,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80px;
+            height: 100px;
         }
 
         nav ul {
@@ -328,7 +328,29 @@
             padding-left: 500px;
             font-size: 45px;
         }
-       
+        .button-container {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-10%, -10%);
+    gap: 50px;
+
+}
+button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.985);
+    box-shadow: inset;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#a20305;
+    color: rgb(255, 255, 255);
+}
+
     </style>
 </head>
 <body>
@@ -354,7 +376,10 @@
         </div>
     </header>
     <div class="first">
-        <p>Choose a course!!</p>
+        <div class="button-container">
+            <button id="button-after-10th">After 10th</button>
+            <button id="button-after-inter">After Inter</button>
+        </div>
     </div>
     <div class="cont">
         <div class="high">
@@ -486,13 +511,13 @@
          slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}
         slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change image every 3 seconds
+        setTimeout(showSlides, 3000); 
         }
         document.getElementById("button-after-10th").addEventListener("click", function() {
-                window.location.href = "after_10th.html"; // Replace with the URL of your page for after 10th
+                window.location.href = "after_10th.html"; 
             });
         document.getElementById("button-after-inter").addEventListener("click", function() {
-                window.location.href = "After_inter.html"; // Replace with the URL of your page for after 10th
+                window.location.href = "After_inter.html"; 
             });
         </script>
 </body>
